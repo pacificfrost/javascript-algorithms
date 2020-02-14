@@ -1,0 +1,33 @@
+{
+  "name": "javascript-algorithms",
+  "version": "1.0.0",
+  "description": "A repository for learning and testing algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava -v -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacificfrost/javascript-algorithms.git"
+  },
+  "keywords": [
+    "algorithms",
+    "learning",
+    "javascript",
+    "education"
+  ],
+  "author": "Alisdair Frost",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pacificfrost/javascript-algorithms/issues"
+  },
+  "homepage": "https://github.com/pacificfrost/javascript-algorithms#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^3.3.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  }
+}
