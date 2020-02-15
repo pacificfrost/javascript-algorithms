@@ -17,3 +17,9 @@ test('reverseStringB - Should return reversed string', t => {
   t.is(solutions.reverseStringB(string2), 'RAbuf');
   t.is(solutions.reverseStringB(string3), '!654321!');
 });
+
+test('reverseStringC - Should return reversed string', t => {
+  t.is(solutions.reverseStringC(string1), 'dlroW olleH');
+  t.is(solutions.reverseStringC(string2), 'RAbuf');
+  t.is(solutions.reverseStringC(string3), '!654321!');
+});

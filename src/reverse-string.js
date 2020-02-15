@@ -27,7 +27,17 @@ const reverseStringB = str => {
   return newStr;
 };
 
+/**
+ * Reverse string c
+ * @param {string} str
+ * @return {string}
+ */
+const reverseStringC = str => {
+  return str.split('').reduce((newStr, char) => `${char}${newStr}`, '');
+};
+
 module.exports = {
   reverseStringA,
   reverseStringB,
+  reverseStringC,
 };
