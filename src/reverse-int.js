@@ -26,6 +26,22 @@ const reverseIntA = num => {
   return parseInt(newStr);
 };
 
+/**
+ * Reverse int b
+ * @param {number} num
+ * @return {number}
+ */
+const reverseIntB = num => {
+  const str = num
+    .toString()
+    .split('')
+    .reverse()
+    .join('');
+
+  return parseInt(str) * Math.sign(num);
+};
+
 module.exports = {
   reverseIntA,
+  reverseIntB,
 };
