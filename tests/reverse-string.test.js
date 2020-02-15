@@ -6,12 +6,14 @@ const string1 = 'Hello World';
 const string2 = 'fubAR';
 const string3 = '!123456!';
 
-test.before(() => {
-  solutions.reverseString(string1);
+test('reverseStringA - Should return reversed string', t => {
+  t.is(solutions.reverseStringA(string1), 'dlroW olleH');
+  t.is(solutions.reverseStringA(string2), 'RAbuf');
+  t.is(solutions.reverseStringA(string3), '!654321!');
 });
 
-test('reverseString - Should return reversed string', t => {
-  t.is(solutions.reverseString(string1), 'dlroW olleH');
-  t.is(solutions.reverseString(string2), 'RAbuf');
-  t.is(solutions.reverseString(string3), '!654321!');
+test('reverseStringB - Should return reversed string', t => {
+  t.is(solutions.reverseStringB(string1), 'dlroW olleH');
+  t.is(solutions.reverseStringB(string2), 'RAbuf');
+  t.is(solutions.reverseStringB(string3), '!654321!');
 });
