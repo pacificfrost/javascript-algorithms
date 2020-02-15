@@ -6,6 +6,10 @@ const string1 = 'Hello World';
 const string2 = 'fubAR';
 const string3 = '!123456!';
 
+test.before(() => {
+  solutions.reverseString(string1);
+});
+
 test('reverseString - Should return reversed string', t => {
   t.is(solutions.reverseString(string1), 'dlroW olleH');
   t.is(solutions.reverseString(string2), 'RAbuf');

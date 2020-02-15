@@ -4,8 +4,6 @@
  * @param {number} target
  */
 const twoSum = (arr, target) => {
-  console.time('twoSum');
-
   const indices = [];
 
   for (let i = 0; i < arr.length; i++) {
@@ -16,8 +14,6 @@ const twoSum = (arr, target) => {
     }
   }
 
-  console.timeEnd('twoSum');
-
   return indices;
 };
 
@@ -27,8 +23,6 @@ const twoSum = (arr, target) => {
  * @param {number} target
  */
 const twoSumFast = (arr, target) => {
-  console.time('twoSumFast');
-
   let indices;
   let hash = {};
 
@@ -43,8 +37,6 @@ const twoSumFast = (arr, target) => {
 
     hash[num] = i;
   }
-
-  console.timeEnd('twoSumFast');
 
   return indices;
 };
