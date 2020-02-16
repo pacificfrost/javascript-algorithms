@@ -1,10 +1,10 @@
 /**
- * Chunk
+ * Chunk a
  * @param {array} arr
  * @param {number} len
  * @return {array}
  */
-const chunk = (arr, len) => {
+const chunkA = (arr, len) => {
   const result = [];
 
   let tempArr = [];
@@ -26,6 +26,27 @@ const chunk = (arr, len) => {
   return result;
 };
 
+/**
+ * Chunk b
+ * @param {array} arr
+ * @param {number} len
+ * @return {array}
+ */
+const chunkB = (arr, len) => {
+  const result = [];
+
+  let index = 0;
+
+  do {
+    result.push(arr.slice(index, index + len));
+
+    index += len;
+  } while (index <= arr.length - 1);
+
+  return result;
+};
+
 module.exports = {
-  chunk,
+  chunkA,
+  chunkB,
 };
