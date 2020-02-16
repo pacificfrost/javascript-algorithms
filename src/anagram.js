@@ -4,7 +4,7 @@ const regEx = /[^\w]/g;
  * Anagram a
  * @param {string} strA
  * @param {string} strB
- * @return {string}
+ * @return {boolean}
  */
 const anagramA = (strA, strB) => {
   const cleanStrA = strA.replace(regEx, '').toLowerCase();
@@ -37,6 +37,31 @@ const anagramA = (strA, strB) => {
   return true;
 };
 
+/**
+ * Anagram b
+ * @param {string} strA
+ * @param {string} strB
+ * @return {boolean}
+ */
+const anagramB = (strA, strB) => {
+  return cleanString(strA) === cleanString(strB);
+};
+
+/**
+ * Clean string
+ * @param {string} str
+ * @return {string}
+ */
+const cleanString = str => {
+  return str
+    .replace(regEx, '')
+    .toLowerCase()
+    .split('')
+    .sort()
+    .join();
+};
+
 module.exports = {
   anagramA,
+  anagramB,
 };

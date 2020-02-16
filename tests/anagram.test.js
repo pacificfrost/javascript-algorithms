@@ -22,3 +22,15 @@ test('anagramA - B - Should be an anagram', t => {
 test('anagramA - C - Should not be an anagram', t => {
   t.is(solutions.anagramA(testCstringA, testCstringB), false);
 });
+
+test('anagramB - A - Should be an anagram', t => {
+  t.is(solutions.anagramB(testAstringA, testAstringB), true);
+});
+
+test('anagramB - B - Should be an anagram', t => {
+  t.is(solutions.anagramB(testBstringA, testBstringB), true);
+});
+
+test('anagramB - C - Should not be an anagram', t => {
+  t.is(solutions.anagramB(testCstringA, testCstringB), false);
+});
