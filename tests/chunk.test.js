@@ -33,6 +33,7 @@ test('chunkA - B - Should return correct array lengths', t => {
   t.is(solution[0].length, testResB[0].length);
   t.is(solution[1].length, testResB[1].length);
   t.is(solution[2].length, testResB[2].length);
+  t.is(solution[3], testResB[3]);
 });
 
 test('chunkA - C - Should return correct array lengths', t => {
@@ -58,6 +59,7 @@ test('chunkB - B - Should return correct array lengths', t => {
   t.is(solution[0].length, testResB[0].length);
   t.is(solution[1].length, testResB[1].length);
   t.is(solution[2].length, testResB[2].length);
+  t.is(solution[3], testResB[3]);
 });
 
 test('chunkB - C - Should return correct array lengths', t => {
